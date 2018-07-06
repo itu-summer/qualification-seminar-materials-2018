@@ -18,6 +18,24 @@ For the remainder of the sessions the project description contains information
 on how to work with the files directly through git.
 Please refer to the session 4 lecture screencast, if you don't know what this means.
 
+## Schedule
+
+The first day Monday 9/7/2018, we will have tea, coffee, and croissants from 8:30 to 9:00 in front of Auditorium 1 before the start of the seminar.
+
+| Date      | Lecture       | Place | Workshop      | Place | Topic  
+|---------- | ------------- | ----- | ------------- | ----- | -------------------------- |
+| 9/7/2018  | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 1: Writing your first program! |
+| 11/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 2: Basic Python syntax |
+| 13/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 3: Python building blocks |
+| 16/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 4: Commanding the lines |
+| 18/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 5: Working with files and objects |
+| 20/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 6: Working with data and git |
+| 23/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 7: Algorithms and runtimes |
+| 25/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 8: Abstract data types |
+| 27/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 9: Trees and graphs |
+| 30/7/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 10: Network and webservers |
+| 1/8/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 11: Project 1/2 |
+| 3/8/2018 | 09:00 - 13:00 | Aud 1 | 13:00 - 15:00 | Scrollbar and DesignLab | 12: Project 2/2 |
 
 ### Literature
 
