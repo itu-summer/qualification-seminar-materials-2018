@@ -7,8 +7,8 @@ The sessions will be released as they are presented in the course.
 
 ## Content
 
-Here you can find literature, lecture materials, homework, homework solutions
-and lecture screencasts.
+Here you can find literature, lecture materials, homework, homework solutions, lecture screencasts and additional resources for the extra
+curious.
 
 The content is divided into folders, where each folder contains the relevant
 material for that session.
@@ -72,6 +72,12 @@ books.
 
 All sessions will be screencast via [Ilos](ilosvideos.com) within this folder: 
 https://app.ilosvideos.com/content/r8HlHd3Knj0Z
+
+## Additional resources
+
+Python is huge, and there are tons of interesting material out there.
+We collected some links that we think might be relevant in 
+[this page about Python resources](resources.md).
 
 ## Repository structure
 The session folders contains the code the code
