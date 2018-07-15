@@ -19,12 +19,12 @@ critically consider whether these resources will help or confuse your.
 * https://www.learnpython.org/
   * A/V resources on learning python
 
-## Kurated links on learning Python
+## Curated links on learning Python
 * https://ujjwalkarn.me/2016/05/30/a-curated-list-of-python-tutorials-for-data-science-nlp-and-machine-learning/
-  * Extensive(!) kurated list on Python resources
+  * Extensive(!) curated list on Python resources
   * Also contains information about machine learning and data science tools
 * https://www.fullstackpython.com/best-python-resources.html
-  * Yet another kurated list of python resources
+  * Yet another curated list of python resources
 
 ## Interactive programming and challenges
 * https://www.learnpython.org/
