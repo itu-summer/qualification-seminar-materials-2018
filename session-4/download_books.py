@@ -23,5 +23,5 @@ def run(arguments):
 
 if __name__ == '__main__':
     # Call me from the CLI for example with:
-    # python args_printer.py arg_1 [arg_2 ...]
+    # python download_books.py url_1 [url_2 ...]
     run(sys.argv[1:])
