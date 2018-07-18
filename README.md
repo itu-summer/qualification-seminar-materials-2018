@@ -127,3 +127,8 @@ $ git pull
 
 In case the notebooks do not get rendered on Github, you should be able to read them here:
 https://nbviewer.jupyter.org/github/itu-summer/qualification-seminar-materials-2018/tree/master/
+
+
+## Extra exercises called "Extra recap exercises.ipynb"
+
+This is some extra, non mandatory exercises. These exercise is created to rehearse some of your current skills and to recap some of material you have been shown. There are also some solutions to these exercises as well as a video (https://learnit.itu.dk/mod/forum/discuss.php?d=15953) where Viktor shows how he would solve these exercises. 
