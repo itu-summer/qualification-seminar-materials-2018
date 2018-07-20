@@ -21,7 +21,7 @@ The second dataset comes originally from Danmarks Statistik and maps country cod
   * Set a breakpoint on line `5` in `read_excel_files.py` and use the debugger to step through the execution of this program.
   * Try to understand what is going on by observing the values of variables.
 
-Observe that the program in `read_excel_files.py` is quite unpractical. We read two files via the two functions `country_codes_in_kbh_data` and `country_codes_in_stats_data` respectively. However, the two functions are almost the same. Compare them line by line, i.e., compare line 5 to line 23, line 6 to line 24, line 7 to line 25, ..., and finally line 19 to line 37.
+Observe that the program in `read_excel_files.py` is quite unpractical. We read two files via the two functions `country_codes_in_kbh_data` and `country_codes_in_stats_data` respectively. However, the two functions are almost the same. Compare them line by line, i.e., compare line 5 to line 22, line 6 to line 23, line 7 to line 24, ..., and finally line 18 to line 35.
 
   * On a sheet of paper note down the differences per line.
   * _Reflection:_ How can you reduce code duplication?
