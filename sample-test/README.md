@@ -7,7 +7,9 @@ For the test you will also receive a `zip` file you will have to extract,
 before you can access the actual questions.
 
 ## How to solve the test
-The solutions should be placed inside a folder carrying your name. 
+The solutions should be placed inside a folder carrying your name and your
+ITU id, like so: `sol-XXX` where `sol` is the name and `XXX` is the
+student id.
 The actual test will be downloaded as a `zip` file, and the solution will have
 to be uploaded as a `zip` file, so it is easier for you if you have it in
 a single directory. 
