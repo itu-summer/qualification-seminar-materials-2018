@@ -8,8 +8,8 @@ before you can access the actual questions.
 
 ## How to solve the test
 The solutions should be placed inside a folder carrying your name and your
-ITU id, like so: `sol-XXX` where `sol` is the name and `XXX` is the
-student id.
+ITU id, like so: `sol-XXX` where `sol` is an abbreviation for 'solution'
+and `XXX` is the student id. An example could be `sol-jegp`.
 The actual test will be downloaded as a `zip` file, and the solution will have
 to be uploaded as a `zip` file, so it is easier for you if you have it in
 a single directory. 
