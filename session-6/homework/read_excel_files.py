@@ -5,7 +5,6 @@ def country_codes_in_kbh_data():
     filename = 'befkbhalderstatkode_small.xlsx'
     wb = openpyxl.load_workbook(filename)
     sheet = wb.get_sheet_by_name("Sheet1")
-    wb.get_active_sheet()
 
     list_of_columns = list(sheet.columns)
     column_of_interest = list_of_columns[3]
@@ -23,7 +22,6 @@ def country_codes_in_stats_data():
     filename = 'country_codes.xlsx'
     wb = openpyxl.load_workbook(filename)
     sheet = wb.get_sheet_by_name("Sheet1")
-    wb.get_active_sheet()
 
     list_of_columns = list(sheet.columns)
     column_of_interest = list_of_columns[0]
