@@ -76,9 +76,9 @@ Let's say `find_element_in_a_list2` is run with a list of size `n` . The worst-c
     c. quadratic
     d. exponential
 
-# Part 2: Sorting
+# Part 3: Sorting
 
-## 2.1: Bubble sort
+## 3.1: Bubble sort
 
 Copy and run the following code in a notebook:
 
@@ -100,7 +100,7 @@ print(data_list)
 1. Discuss the following statement: _If during a run of the loop `for idx in range(passnum):` no elements are exchanged, then the input is sorted._
 2. (**Optional**): How can you adapt the implementation above to use this knowledge?
 
-## 2.2: Bubble sort performance
+## 3.2: Bubble sort performance
 
 Run the `bubble_sort` function with the following ways using `timeit` as seen in class.
 - `bubble_sort(list(reversed(range(100))))`
@@ -111,13 +111,13 @@ Write down the expected output. Discuss the measured times: Is that to be expect
 
 Expected: Running times should differ by a factor of 100.
 
-## Part 3: (**Optional**) Insertion sort
+## Part 4: (**Optional**) Insertion sort
 
 1. *Insertion Sort* is another basic sorting algorithm. Watch https://www.youtube.com/watch?v=ROalU379l3U and describe the method that is used to sort a given input. 
 2. Implement *Insertion Sort* as function `insertion_sort(data_list)`.
 3. Compare the behavior of *Insertion Sort* to *Bubble Sort* on a well-chosen `data_list` input. 
 
-## Part 4: (**Optional**) Searching a sorted list
+## Part 5: (**Optional**) Searching a sorted list
 
 From now we assume that the lists we want to search are sorted, e.g., by calling `sorted(l)` on the list `l`. Searching a sorted list can be done much faster using the following idea: Let's say we want to search a sorted list `l` with `n` entries for an element `x`.
 1. Set `left = 0` and `right = n - 1`.
@@ -137,7 +137,7 @@ A visualization of this method is given in the picture below. Each arrow points 
 3. Use `%timeit` to measure the running time of `binary_search`. The **worst-case runtime** of the function is mentioned in "Analysis of Algorithms". Which one is it?
 
 
-# Alternative to Part 3 and 4
+# Alternative to Part 4 and 5
 
 The purpose of this task is to let you repeat things that you already know and to let you improve your coding skills.
 
