@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html><head>
+  <title>My graph</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    #mynetwork {
+      width: 600px;
+      height: 400px;
+      border: 1px solid lightgray;
+    }
+
+    p {
+      max-width:700px;
+    }
+  </style>
+<style></style></head>
+<body>
+
+<div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"><canvas width="1200" height="800" style="position: relative; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"></canvas></div></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    { id: 0, label: "R2-D2", color: 'rgba(30,30,30,0.7)'},
+    { id: 1, label: "Chewbacca", color: 'rgba(240,240,240,0.7)'},
+    { id: 2, label: "C-3Po", color: 'rgba(200,200,200,0.7)'},
+    { id: 3, label: "Luke", color: 'rgba(200,200,200,0.7)'},
+    { id: 4, label: "Darth Vader", color: 'rgba(240,240,240,0.7)'},
+    { id: 5, label: "Camie", color: 'rgba(200,200,200,0.7)'},
+    { id: 6, label: "Biggs", color: 'rgba(30,30,30,0.7)'},
+    { id: 7, label: "Leia", color: 'rgba(200,200,200,0.7)'},
+    { id: 8, label: "Beru", color: 'rgba(240,240,240,0.7)'},
+    { id: 9, label: "Owen", color: 'rgba(240,240,240,0.7)'},
+    { id: 10, label: "Obi-Wan", color: 'rgba(240,240,240,0.7)'},
+    { id: 11, label: "Motti", color: 'rgba(240,240,240,0.7)'},
+    { id: 12, label: "Tarkin", color: 'rgba(240,240,240,0.7)'},
+    { id: 13, label: "Han", color: 'rgba(240,240,240,0.7)'},
+    { id: 14, label: "Greedo", color: 'rgba(240,240,240,0.7)'},
+    { id: 15, label: "Jabba", color: 'rgba(240,240,240,0.7)'},
+    { id: 16, label: "Dodonna", color: 'rgba(240,240,240,0.7)'},
+    { id: 17, label: "Gold Leader", color: 'rgba(200,200,200,0.7)'},
+    { id: 18, label: "Wedge", color: 'rgba(200,200,200,0.7)'},
+    { id: 19, label: "Red Leader", color: 'rgba(200,200,200,0.7)'},
+    { id: 20, label: "Red Ten", color: 'rgba(240,240,240,0.7)'},
+    { id: 21, label: "Gold Five", color: 'rgba(240,240,240,0.7)'},
+    
+  ]);
+  // create an array with edges
+  var edges = new vis.DataSet([
+    { from: 1,to: 0,  arrows:'to', },
+    { from: 1,to: 10,  arrows:'to', },
+    { from: 1,to: 3,  arrows:'to', },
+    { from: 1,to: 13,  arrows:'to', },
+    { from: 1,to: 7,  arrows:'to', },
+    { from: 2,to: 0,  arrows:'to', },
+    { from: 2,to: 1,  arrows:'to', },
+    { from: 2,to: 3,  arrows:'to', },
+    { from: 2,to: 9,  arrows:'to', },
+    { from: 2,to: 7,  arrows:'to', },
+    { from: 2,to: 10,  arrows:'to', },
+    { from: 2,to: 13,  arrows:'to', },
+    { from: 2,to: 19,  arrows:'to', },
+    { from: 3,to: 0,  arrows:'to', },
+    { from: 3,to: 9,  arrows:'to', },
+    { from: 3,to: 10,  arrows:'to', },
+    { from: 3,to: 18,  arrows:'to', },
+    { from: 3,to: 19,  arrows:'to', },
+    { from: 3,to: 20,  arrows:'to', },
+    { from: 4,to: 7,  arrows:'to', },
+    { from: 4,to: 11,  arrows:'to', },
+    { from: 4,to: 12,  arrows:'to', },
+    { from: 4,to: 10,  arrows:'to', },
+    { from: 5,to: 3,  arrows:'to', },
+    { from: 6,to: 0,  arrows:'to', },
+    { from: 6,to: 5,  arrows:'to', },
+    { from: 6,to: 3,  arrows:'to', },
+    { from: 6,to: 7,  arrows:'to', },
+    { from: 6,to: 19,  arrows:'to', },
+    { from: 6,to: 2,  arrows:'to', },
+    { from: 6,to: 18,  arrows:'to', },
+    { from: 6,to: 17,  arrows:'to', },
+    { from: 7,to: 0,  arrows:'to', },
+    { from: 7,to: 3,  arrows:'to', },
+    { from: 7,to: 10,  arrows:'to', },
+    { from: 7,to: 11,  arrows:'to', },
+    { from: 7,to: 12,  arrows:'to', },
+    { from: 7,to: 19,  arrows:'to', },
+    { from: 8,to: 0,  arrows:'to', },
+    { from: 8,to: 3,  arrows:'to', },
+    { from: 8,to: 9,  arrows:'to', },
+    { from: 8,to: 2,  arrows:'to', },
+    { from: 8,to: 7,  arrows:'to', },
+    { from: 9,to: 0,  arrows:'to', },
+    { from: 10,to: 0,  arrows:'to', },
+    { from: 11,to: 12,  arrows:'to', },
+    { from: 13,to: 0,  arrows:'to', },
+    { from: 13,to: 10,  arrows:'to', },
+    { from: 13,to: 3,  arrows:'to', },
+    { from: 13,to: 15,  arrows:'to', },
+    { from: 13,to: 7,  arrows:'to', },
+    { from: 14,to: 13,  arrows:'to', },
+    { from: 16,to: 17,  arrows:'to', },
+    { from: 16,to: 18,  arrows:'to', },
+    { from: 16,to: 3,  arrows:'to', },
+    { from: 17,to: 18,  arrows:'to', },
+    { from: 17,to: 3,  arrows:'to', },
+    { from: 17,to: 19,  arrows:'to', },
+    { from: 19,to: 18,  arrows:'to', },
+    { from: 19,to: 20,  arrows:'to', },
+    
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    nodes: {borderWidth: 2},
+    edges: {
+      arrows: {
+        to: {
+          scaleFactor: 0.5
+        }
+      }
+    },
+    interaction: {hover: true}
+  }
+  var network = new vis.Network(container, data, options);
+</script>
+
+</body></html>
