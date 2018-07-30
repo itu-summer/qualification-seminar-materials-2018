@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table, td, th {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    td {
+        height: 50px;
+        vertical-align: bottom;
+    }
+    </style>
+    <title>Sample Survey Results</title>
+    <style></style>
+</head>
+
+<body>
+    <h1><center>Replies collected so far.</center></h1>
+    <table style="width:80%">
+        <tr>
+            <th>Gender</th>
+            <th>Month</th>
+            <th>Day</th>
+            <th>Year</th>
+            <th>Nationality</th>
+            <th>Favorite Ice Cream</th>
+            <th>Ice Cream</th>
+            <th>Cake</th>
+            <th>Cookies</th>
+            <th>Ingredient</th>
+            <th>Comment</th>
+            <th>Email</th>
+        </tr>
+        {% for gender, mob, dob, yob, nation, fav_icecream, icecream, cake, cookies, ingredient, comment, email in reply_lines %}
+        <tr>
+            <th>{{gender}}</th>
+            <th>{{mob}}</th>
+            <th>{{dob}}</th>
+            <th>{{yob}}</th>
+            <th>{{nation}}</th>
+            <th>{{fav_icecream}}</th>
+            <th>{{icecream}}</th>
+            <th>{{cake}}</th>
+            <th>{{cookies}}</th>
+            <th>{{ingredient}}</th>
+            <th>{{comment}}</th>
+            <th>{{email}}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>

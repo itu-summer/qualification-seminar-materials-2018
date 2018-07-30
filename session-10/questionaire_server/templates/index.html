@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Sample HTML Survey Form</title>
+    <style></style>
+</head>
+
+<body>
+    <h1><center>Sample HTML Survey Form</center></h1>
+    <h4><center>Qualification Seminar</center></h4>
+    <form action="/" method="post">
+        <hr>
+        <p>
+            The purpose of the survey would be stated here at the top of the survey. This survey should take less than 10 minutes to complete. This example is based on <a href="http://www1.udel.edu/dsacher/survey/">Example online</a>
+        </p>
+        <p>
+            Some simple demographic information could be collected with radio buttons (e.g., gender, nationality), selection boxes (e.g., date of birth, snack preferences, etc.):
+        </p>
+        <h3>Please tell us a little about yourself. </h3>
+        <p>
+            Gender:
+            <input type="RADIO" name="gender" value="female">Female
+            <input type="RADIO" name="gender" value="male">Male
+            <input type="RADIO" name="gender" value="na">Don't want to tell
+        </p>
+        <p>
+            Date of birth: Month
+            <select name="mob">
+                <option selected="" value="">?</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <option value="3">Mar</option>
+                <option value="4">Apr</option>
+                <option value="5">May</option>
+                <option value="6">Jun</option>
+                <option value="7">Jul</option>
+                <option value="8">Aug</option>
+                <option value="9">Sept</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+            </select> Day
+            <select name="dob">
+                <option selected="" value="">?</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31 </option>
+            </select> Year
+            <select name="yob">
+                <option selected="" value="">??</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+            </select>
+        </p>
+        <p>
+            Nationality:
+            <input type="RADIO" name="nation" value="1">Danish
+            <input type="RADIO" name="nation" value="2">Swedish
+            <input type="RADIO" name="nation" value="3">Norwegian
+            <input type="RADIO" name="nation" value="4">Finish
+            <input type="RADIO" name="nation" value="5">Non-Scandinavian
+        </p>
+        <p>
+            Favorite ice-cream:
+            <select name="fav_icecream">
+                <option selected="" value=""> ?</option>
+                <option value="1">Vanilla</option>
+                <option value="2">Chocolate</option>
+                <option value="3">Strawberry</option>
+                <option value="4">Lemon</option>
+                <option value="5">Other</option>
+            </select>
+        </p>
+        <hr>
+        <h3>Select the answer that is true most of the time.</h3>
+        <p>
+            <table border="">
+                <tbody>
+                    <tr align="CENTER">
+                        <td width="75"> </td>
+                        <td width="75"><b>Strongly<br>agree</b></td>
+                        <td width="75"><b>Agree</b></td>
+                        <td width="75"><b>Neither<br>agree<br>nor<br>disagree</b></td>
+                        <td width="75"><b>Disagree</b></td>
+                        <td width="75"><b>Strongly<br>disagree</b></td>
+                    </tr>
+                    <tr align="CENTER">
+                        <td align="LEFT">
+                            We did not eat sufficient ice cream during the seminar.</td>
+                        <td>
+                            <input type="RADIO" name="icecream" value="1">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="icecream" value="2">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="icecream" value="3">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="icecream" value="4">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="icecream" value="5">
+                        </td>
+                    </tr>
+                    <tr align="CENTER">
+                        <td align="LEFT">
+                            There should have been more cake.</td>
+                        <td>
+                            <input type="RADIO" name="cake" value="1">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cake" value="2">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cake" value="3">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cake" value="4">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cake" value="5">
+                        </td>
+                    </tr>
+                    <tr align="CENTER">
+                        <td align="LEFT">
+                            I am angry because nobody shared cookies with me.</td>
+                        <td>
+                            <input type="RADIO" name="cookies" value="1">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cookies" value="2">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cookies" value="3">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cookies" value="4">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="cookies" value="5">
+                        </td>
+                    </tr>
+                    <tr align="CENTER">
+                        <td align="LEFT">
+                            Raisins should not be a cookie ingredient.</td>
+                        <td>
+                            <input type="RADIO" name="ingredient" value="1">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="ingredient" value="2">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="ingredient" value="3">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="ingredient" value="4">
+                        </td>
+                        <td>
+                            <input type="RADIO" name="ingredient" value="5">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <hr>
+        <p></p>
+        <p>
+            Do you have any additional thoughts on the topic of the survey?
+            <br>
+            <textarea name="comment" rows="4" cols="50"></textarea>
+        </p>
+        <p></p>
+        <p>
+            If you would like to get informed about the results of the survey, please type your e-mail address below:
+            <br>
+        </p>
+        <center>
+            E-mail address:
+            <input type="text" name="email" size="40" maxlength="80">
+        </center>
+        <p></p>
+        <p>
+            Thank you for taking the survey. To submit the results, press the
+            <b>Send info</b> button below.
+        </p>
+        <p></p>
+        <p>
+            <input type="submit" value="Send info">
+            <input type="reset" value="Clear values">
+        </p>
+        <hr>
+    </form>
+</body>
+
+</html>
