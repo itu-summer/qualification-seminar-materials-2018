@@ -1,0 +1,138 @@
+
+<html><head>
+  <title>Starwars Episode 4</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    #mynetwork {
+      width: 800px;
+      height: 600px;
+      border: 1px solid lightgray;
+    }
+
+    p {
+      max-width:800px;
+    }
+  </style>
+<style></style></head>
+<body>
+
+<p> Starwars Episode 4</p>
+
+<div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"><canvas width="1200" height="800" style="position: relative; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"></canvas></div></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    { id: 0, label: "R2-D2", color: 'rgba(87,110,180,0.5)', title: "no appearence: 40"},
+    { id: 1, label: "Chewbacca", color: 'rgba(236,65,99,0.5)', title: "no appearence: 30"},
+    { id: 2, label: "C-3Po", color: 'rgba(181,15,248,0.5)', title: "no appearence: 43"},
+    { id: 3, label: "Luke", color: 'rgba(46,212,61,0.5)', title: "no appearence: 89"},
+    { id: 4, label: "Darth Vader", color: 'rgba(196,188,43,0.5)', title: "no appearence: 26"},
+    { id: 5, label: "Camie", color: 'rgba(87,79,202,0.5)', title: "no appearence: 4"},
+    { id: 6, label: "Biggs", color: 'rgba(56,23,132,0.5)', title: "no appearence: 19"},
+    { id: 7, label: "Leia", color: 'rgba(76,230,10,0.5)', title: "no appearence: 26"},
+    { id: 8, label: "Beru", color: 'rgba(184,108,88,0.5)', title: "no appearence: 6"},
+    { id: 9, label: "Owen", color: 'rgba(127,187,153,0.5)', title: "no appearence: 7"},
+    { id: 10, label: "Obi-Wan", color: 'rgba(74,198,224,0.5)', title: "no appearence: 23"},
+    { id: 11, label: "Motti", color: 'rgba(250,127,245,0.5)', title: "no appearence: 4"},
+    { id: 12, label: "Tarkin", color: 'rgba(81,54,183,0.5)', title: "no appearence: 13"},
+    { id: 13, label: "Han", color: 'rgba(71,115,78,0.5)', title: "no appearence: 45"},
+    { id: 14, label: "Greedo", color: 'rgba(110,34,84,0.5)', title: "no appearence: 3"},
+    { id: 15, label: "Jabba", color: 'rgba(152,195,86,0.5)', title: "no appearence: 3"},
+    { id: 16, label: "Dodonna", color: 'rgba(5,152,120,0.5)', title: "no appearence: 4"},
+    { id: 17, label: "Gold Leader", color: 'rgba(167,229,5,0.5)', title: "no appearence: 15"},
+    { id: 18, label: "Wedge", color: 'rgba(121,207,173,0.5)', title: "no appearence: 16"},
+    { id: 19, label: "Red Leader", color: 'rgba(105,135,66,0.5)', title: "no appearence: 34"},
+    { id: 20, label: "Red Ten", color: 'rgba(65,41,90,0.5)', title: "no appearence: 9"},
+    { id: 21, label: "Gold Five", color: 'rgba(30,195,132,0.5)', title: "no appearence: 9"},
+    
+  ]);
+  // create an array with edges
+  var edges = new vis.DataSet([
+    { from: 1,to: 0,  title: "no appearence: 3" },
+    { from: 2,to: 0,  title: "no appearence: 17" },
+    { from: 8,to: 0,  title: "no appearence: 1" },
+    { from: 3,to: 0,  title: "no appearence: 14" },
+    { from: 9,to: 0,  title: "no appearence: 1" },
+    { from: 10,to: 0,  title: "no appearence: 4" },
+    { from: 7,to: 0,  title: "no appearence: 5" },
+    { from: 6,to: 0,  title: "no appearence: 1" },
+    { from: 13,to: 0,  title: "no appearence: 6" },
+    { from: 1,to: 10,  title: "no appearence: 4" },
+    { from: 2,to: 1,  title: "no appearence: 4" },
+    { from: 1,to: 3,  title: "no appearence: 14" },
+    { from: 1,to: 13,  title: "no appearence: 19" },
+    { from: 1,to: 7,  title: "no appearence: 8" },
+    { from: 5,to: 3,  title: "no appearence: 2" },
+    { from: 6,to: 5,  title: "no appearence: 2" },
+    { from: 6,to: 3,  title: "no appearence: 4" },
+    { from: 4,to: 7,  title: "no appearence: 1" },
+    { from: 8,to: 3,  title: "no appearence: 3" },
+    { from: 8,to: 9,  title: "no appearence: 3" },
+    { from: 8,to: 2,  title: "no appearence: 2" },
+    { from: 3,to: 9,  title: "no appearence: 3" },
+    { from: 2,to: 3,  title: "no appearence: 18" },
+    { from: 2,to: 9,  title: "no appearence: 2" },
+    { from: 2,to: 7,  title: "no appearence: 6" },
+    { from: 7,to: 3,  title: "no appearence: 17" },
+    { from: 8,to: 7,  title: "no appearence: 1" },
+    { from: 3,to: 10,  title: "no appearence: 19" },
+    { from: 2,to: 10,  title: "no appearence: 6" },
+    { from: 7,to: 10,  title: "no appearence: 1" },
+    { from: 11,to: 12,  title: "no appearence: 2" },
+    { from: 4,to: 11,  title: "no appearence: 1" },
+    { from: 4,to: 12,  title: "no appearence: 7" },
+    { from: 13,to: 10,  title: "no appearence: 9" },
+    { from: 13,to: 3,  title: "no appearence: 26" },
+    { from: 14,to: 13,  title: "no appearence: 1" },
+    { from: 13,to: 15,  title: "no appearence: 1" },
+    { from: 2,to: 13,  title: "no appearence: 6" },
+    { from: 7,to: 11,  title: "no appearence: 1" },
+    { from: 7,to: 12,  title: "no appearence: 1" },
+    { from: 13,to: 7,  title: "no appearence: 13" },
+    { from: 4,to: 10,  title: "no appearence: 1" },
+    { from: 16,to: 17,  title: "no appearence: 1" },
+    { from: 16,to: 18,  title: "no appearence: 1" },
+    { from: 16,to: 3,  title: "no appearence: 1" },
+    { from: 17,to: 18,  title: "no appearence: 1" },
+    { from: 17,to: 3,  title: "no appearence: 1" },
+    { from: 3,to: 18,  title: "no appearence: 2" },
+    { from: 6,to: 7,  title: "no appearence: 1" },
+    { from: 7,to: 19,  title: "no appearence: 1" },
+    { from: 3,to: 19,  title: "no appearence: 3" },
+    { from: 6,to: 19,  title: "no appearence: 3" },
+    { from: 6,to: 2,  title: "no appearence: 1" },
+    { from: 2,to: 19,  title: "no appearence: 1" },
+    { from: 19,to: 18,  title: "no appearence: 3" },
+    { from: 17,to: 19,  title: "no appearence: 1" },
+    { from: 6,to: 18,  title: "no appearence: 2" },
+    { from: 19,to: 20,  title: "no appearence: 1" },
+    { from: 6,to: 17,  title: "no appearence: 1" },
+    { from: 3,to: 20,  title: "no appearence: 1" },
+    
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    nodes: {borderWidth: 2},
+    edges: {
+      arrows: {
+        to: {
+          scaleFactor: 0.5
+        }
+      }
+    },
+    interaction: {hover: true}
+  }
+  var network = new vis.Network(container, data, options);
+</script>
+
+</body></html>

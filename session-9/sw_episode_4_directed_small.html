@@ -1,0 +1,79 @@
+
+<html><head>
+  <title>Starwars Episode 4</title>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css">
+    #mynetwork {
+      width: 600px;
+      height: 600px;
+      border: 1px solid lightgray;
+    }
+
+    p {
+      max-width:800px;
+    }
+  </style>
+<style></style></head>
+<body>
+
+<p> Starwars Episode 4</p>
+
+<div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"><canvas width="1200" height="800" style="position: relative; -webkit-user-select: none; -webkit-user-drag: none; width: 100%; height: 100%;"></canvas></div></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    { id: 0, label: "R2-D2", value: 100, color: 'rgba(163,114,169,0.5)', title: "no appearence: 40,<br>idx: 0"},
+    { id: 1, label: "Chewbacca", value: 10, color: 'rgba(70,238,132,0.5)', title: "no appearence: 30,<br>idx: 1"},
+    { id: 2, label: "C-3Po", value: 10, color: 'rgba(75,86,36,0.5)', title: "no appearence: 43,<br>idx: 2"},
+    { id: 3, label: "Luke", value: 10, color: 'rgba(53,223,53,0.5)', title: "no appearence: 89,<br>idx: 3"},
+    { id: 4, label: "Darth Vader", value: 10, color: 'rgba(202,215,29,0.5)', title: "no appearence: 26,<br>idx: 4"},
+    { id: 5, label: "Camie", value: 10, color: 'rgba(212,221,237,0.5)', title: "no appearence: 4,<br>idx: 5"},
+    { id: 6, label: "Biggs", value: 10, color: 'rgba(104,187,113,0.5)', title: "no appearence: 19,<br>idx: 6"},
+    { id: 7, label: "Leia", value: 10, color: 'rgba(187,152,164,0.5)', title: "no appearence: 26,<br>idx: 7"},    
+  ]);
+  // create an array with edges
+  var edges = new vis.DataSet([
+    { from: 1,to: 0,  arrows:'to',  title: "no appearence: 3" },
+    { from: 2,to: 0,  arrows:'to',  title: "no appearence: 17" },
+    { from: 3,to: 0,  arrows:'to',  title: "no appearence: 14" },
+    { from: 7,to: 0,  arrows:'to',  title: "no appearence: 5" },
+    { from: 6,to: 0,  arrows:'to',  title: "no appearence: 1" },
+    { from: 2,to: 1,  arrows:'to',  title: "no appearence: 4" },
+    { from: 1,to: 3,  arrows:'to',  title: "no appearence: 14" },
+    { from: 1,to: 7,  arrows:'to',  title: "no appearence: 8" },
+    { from: 5,to: 3,  arrows:'to',  title: "no appearence: 2" },
+    { from: 6,to: 5,  arrows:'to',  title: "no appearence: 2" },
+    { from: 6,to: 3,  arrows:'to',  title: "no appearence: 4" },
+    { from: 4,to: 7,  arrows:'to',  title: "no appearence: 1" },
+    { from: 2,to: 3,  arrows:'to',  title: "no appearence: 18" },
+    { from: 2,to: 7,  arrows:'to',  title: "no appearence: 6" },
+    { from: 7,to: 3,  arrows:'to',  title: "no appearence: 17" },
+    { from: 6,to: 7,  arrows:'to',  title: "no appearence: 1" },
+    { from: 6,to: 2,  arrows:'to',  title: "no appearence: 1" },
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+    nodes: {borderWidth: 2},
+    edges: {
+      arrows: {
+        to: {
+          scaleFactor: 0.5
+        }
+      }
+    },
+    interaction: {hover: true}
+  }
+  var network = new vis.Network(container, data, options);
+</script>
+
+</body></html>
